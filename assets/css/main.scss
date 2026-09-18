@@ -135,3 +135,20 @@
   border: none;
   display: block;
 }
+
+.storymap-full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.storymap-full-width iframe {
+  width: 100%;
+  height: calc(100vh - 220px); /* adjust based on this site's actual masthead height */
+  min-height: 500px;
+  border: none;
+  display: block;
+}

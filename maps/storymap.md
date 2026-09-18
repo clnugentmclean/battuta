@@ -1,9 +1,10 @@
 ---
 title: "StoryMap"
 layout: single
+classes: wide
 permalink: /maps/storymap/
 ---
-<div id="storymap-wrap">
+<div id="storymap-full-width">
   <iframe id="storymap-frame" src="https://uploads.knightlab.com/storymapjs/d1ee5d64be1b87b46201fa01d2973aa8/practice/index.html" frameborder="0" width="100%"></iframe>
 </div>
 
