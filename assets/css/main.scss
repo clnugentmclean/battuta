@@ -1,8 +1,23 @@
 ---
 ---
 
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap");
+
+$sans-serif: "Source Sans Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+$serif: "Playfair Display", Georgia, serif;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
+
+h1, h2, h3, h4, h5, h6,
+.page__title {
+  font-family: $serif;
+  font-weight: 700;
+}
+
+body {
+  font-family: $sans-serif;
+}
 
 .dropdown {
   position: relative;
@@ -12,7 +27,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background: #F1E9D2 !important; 
+  background: #FFE866 !important; 
   border: 1px solid #ddd;
   list-style: none;
   padding: 0.5em 0;
@@ -41,7 +56,7 @@
   left: 0;
   width: 100%;
   z-index: 9999;
-  background-color: #3E4A32; /* match your site's actual masthead color */
+  background-color: #FFE866; /* match your site's actual masthead color */
 }
 
 .initial-content,
@@ -57,12 +72,24 @@
 .masthead__inner-wrap,
 .masthead__menu,
 #site-nav {
-  background-color: #F1E9D2 !important;
+  background-color: #FFE866 !important;
 }
 
-.masthead .site-title,
+.masthead .site-title {
+  color: #181A18 !important;
+  font-family: $sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .masthead__menu-item a {
-  color: #181A18 !important; /* soft white */
+  color: #181A18 !important;
+  font-family: $sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85em;
 }
 
 .masthead .site-title:hover,
@@ -84,7 +111,7 @@
 }
 
 .greedy-nav .visible-links a::before {
-  background: #5A1846 !important; /* or whatever accent you want here */
+  background: #FF2929 !important; /* or whatever accent you want here */
 }
 
 .oval-portrait {
