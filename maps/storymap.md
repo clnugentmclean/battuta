@@ -2,6 +2,7 @@
 title: "StoryMap"
 layout: single
 classes: wide
+author_profile: false
 permalink: /maps/storymap/
 ---
 <div id="storymap-full-width">
