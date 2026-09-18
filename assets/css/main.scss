@@ -1,0 +1,136 @@
+---
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #3E4A32 !important; 
+  border: 1px solid #ddd;
+  list-style: none;
+  padding: 0.5em 0;
+  margin: 0;
+  min-width: 180px;
+  z-index: 10;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu li a {
+  display: block;
+  padding: 0.5em 1em;
+  white-space: nowrap;
+}
+.greedy-nav,
+.visible-links {
+  overflow: visible !important;
+}
+
+/* Sticky header */
+.masthead {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #3E4A32; /* match your site's actual masthead color */
+}
+
+.initial-content,
+.page {
+  padding-top: 80px; /* was 90px, now matches actual header height */
+}
+
+:target {
+  scroll-margin-top: 90px; /* 80px header + ~10px breathing room */
+}
+
+.masthead,
+.masthead__inner-wrap,
+.masthead__menu,
+#site-nav {
+  background-color: #3E4A32 !important;
+}
+
+.masthead .site-title,
+.masthead__menu-item a {
+  color: #f5f5f0 !important; /* soft white */
+}
+
+.masthead .site-title:hover,
+.masthead__menu-item a:hover {
+  color: #ffffff !important; /* slightly brighter on hover for feedback */
+}
+
+.page__footer {
+  background-color: #E9D6BC; /* or whatever color you want */
+}
+
+.page__footer,
+.page__footer a {
+  color: #181A18 !important; /* soft white text, matches masthead */
+}
+
+.page__footer a:hover {
+  color: #ffffff !important;
+}
+
+.greedy-nav .visible-links a::before {
+  background: #5A1846 !important; /* or whatever accent you want here */
+}
+
+.oval-portrait {
+  float: right;
+  width: 280px;
+  height: 360px;
+  object-fit: cover; /* crops the photo to fill the oval without distorting it */
+  border-radius: 50%; /* unequal width/height + 50% radius = oval, not circle */
+  margin: 0 0 1.5em 2em;
+  shape-outside: ellipse(50% 50%); /* text wraps the curve, not the box */
+}
+
+/* stop the next heading/section from being squeezed if the image is taller than the text */
+.oval-portrait-clear {
+  clear: both;
+}
+
+.image-row {
+  display: flex;
+  gap: 1.5em;
+  margin: 2em 0;
+  flex-wrap: wrap; /* lets images stack on narrow/mobile screens instead of squishing */
+}
+
+.image-row figure {
+  flex: 1 1 45%;
+  margin: 0;
+}
+
+.image-row img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-row figcaption {
+  margin-top: 0.5em;
+  font-size: 0.85em;
+  color: #6d4c34; /* swap to match your palette */
+}
+
+#storymap-wrap {
+  width: 100%;
+}
+
+#storymap-frame {
+  width: 100%;
+  border: none;
+  display: block;
+}

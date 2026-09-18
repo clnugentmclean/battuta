@@ -1,0 +1,12 @@
+title: "Digital Adventures of Ibn Battuta"
+description: "Digital Humanities Project"
+url: "https://clnugentmclean.github.io/battuta/"
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "catppuccin_latte"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+markdown: kramdown
+

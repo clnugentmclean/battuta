@@ -1,0 +1,22 @@
+main:
+  - title: "Home"
+    url: /
+
+  - title: "Maps"
+    children:
+      - title: "StoryMap"
+        url: /maps/storymap/
+      - title: "Full Journey"
+        url: /maps/journey/
+
+  - title: "Case Studies"
+    url: /casestudies/
+
+  - title: "Process"
+    url: /process/
+  
+
+    
+
+
+        
